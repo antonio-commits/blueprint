@@ -1,0 +1,20 @@
+kind: "EntandoPlugin"
+apiVersion: "entando.org/v1"
+metadata:
+  name: "blueprint-plugin"
+spec:
+  image: antnoovle/blueprint:0.0.1-SNAPSHOT
+  replicas: 1
+  dbms: postgresql
+  parameters: {}
+  ingressPath: "/blueprint"
+  healthCheckPath: "/management/health"
+  securityLevel: "strict"
+  connectionConfigNames: []
+  permissions: []
+  roles:
+  - name: blueprint-admin
+    code: blueprint-admin
+  - name: automobile-admin
+    code: "automobile-admin"
+# entando-needle-descriptor-add-roles - Entando blueprint will add roles here

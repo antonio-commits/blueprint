@@ -1,0 +1,13 @@
+code: blueprint-bundle
+description: This is the blueprint bundle
+
+components:
+  plugins:
+    - plugins/blueprint-plugin.yaml
+
+  widgets:
+    - ui/widgets/automobile/tableWidget/automobile-table-widget-descriptor.yaml
+    - ui/widgets/automobile/detailsWidget/automobile-details-widget-descriptor.yaml
+    - ui/widgets/automobile/formWidget/automobile-form-widget-descriptor.yaml
+# entando-needle-descriptor-add-widgets - Entando blueprint will add widget bundle files here
+
